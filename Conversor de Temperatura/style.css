@@ -21,7 +21,7 @@ header {
 
 h1 {
     color: black;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Pequena sombra para destacar */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -38,11 +38,11 @@ main {
 }
 
 .container {
-    background: rgba(255, 255, 255, 0.15); /* Fundo mais transparente */
-    backdrop-filter: blur(12px); /* Efeito de desfoque um pouco mais forte */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
     padding: 30px;
-    border-radius: 20px; /* Cantos mais arredondados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Leve sombra para destacar o card */
+    border-radius: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;

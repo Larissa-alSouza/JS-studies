@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Conversor de Temperatura</h1>
+        </header>
+        <main>
+            <div class="input-container">
+                <section>
+                    <input type="number" name="temp_um" id="temp_um">
+                    <form action="">
+                        <select name="" id="unidade_origem">
+                            <option value="c">Celsius</option>
+                            <option value="f">Fahrenheit</option>
+                            <option value="k">Kelvin</option>
+                        </select>
+                    </form>
+                </section>
+                <section>
+                    <input type="number" name="temp_dois" id="temp_dois">
+                    <form action="">
+                        <select name="" id="unidade_destino">
+                            <option value="c">Celsius</option>
+                            <option value="f">Fahrenheit</option>
+                            <option value="k">Kelvin</option>
+                        </select>
+                    </form>
+                </section>
+            </div>
+            <section class="button-container">
+                <button type="button" id="converter">Converter</button>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

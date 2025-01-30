@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: url(assets/fundo.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Pequena sombra para destacar */
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.input-container {
+    display: flex;
+    gap: 15px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.15); /* Fundo mais transparente */
+    backdrop-filter: blur(12px); /* Efeito de desfoque um pouco mais forte */
+    padding: 30px;
+    border-radius: 20px; /* Cantos mais arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Leve sombra para destacar o card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    padding: 8px;
+    width: 260px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+select {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

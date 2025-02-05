@@ -1,12 +1,15 @@
-document.getElementById('addCheckBox').addEventListener("click", function(){
+let taskCounter = 0;
+
+document.getElementById('addCheckBox').addEventListener("click", function() {
+    const labelText = prompt("Qual sua nova tarefa?");
+    if (!labelText) return;
+
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
-    checkbox.id = 'checkbox' + new Date().getTime();
+    checkbox.id = 'checkbox' + taskCounter++;
 
     const label = document.createElement('label');
     label.setAttribute('for', checkbox.id);
-
-    const labelText = prompt("Qual sua nova tarefa?");
     label.textContent = labelText;
 
     const container = document.createElement('div');
@@ -15,12 +18,13 @@ document.getElementById('addCheckBox').addEventListener("click", function(){
 
     document.getElementById('checkbox-container').appendChild(container);
 
-    checkbox.addEventListener("change", function () {
-        if (this.checked) {
-            const checkedContainer = document.createElement('div');
-            checkedContainer.textContent = labelText;
-            document.getElementById('checkbox-container').appendChild(checkedContainer);
-            container.remove();
+    checkbox.addEventListener("change", function() {
+        if (checkbox.checked) {
+            document.getElementById('checked-container').appendChild(container);
+            checkbox.disabled = true;
+        } else {
+            document.getElementById('checkbox-container').appendChild(container);
+            checkbox.disabled = false;
         }
     });
 });
